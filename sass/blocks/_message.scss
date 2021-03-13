@@ -1,0 +1,111 @@
+.message {
+    &__container {
+      padding-top: 50px;
+       margin-bottom: 70px;
+    }
+       &-calllink {
+         display: flex;
+         flex-direction: column;
+         margin-top: 135px;
+         &__icon {
+          margin-bottom: 40px;
+          margin-right: 420px;
+        }
+      }
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      &__cont {
+         margin-right: 100px;
+         margin-top: 135px;
+      }
+      &__tel {
+        &::before {
+          content: '';
+          background: url('../images/tel.png') no-repeat ;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          transform: translateX(-60px);
+        }
+      }
+      &__email {
+        &::before {
+          content: '';
+          background: url('../images/email.png') no-repeat;
+          width: 24px;
+          height: 20px;
+          position: absolute;
+          transform: translateX(-60px);
+        }
+      }
+      &__geo {
+        &::before {
+          content: '';
+          background: url('../images/geo.png') no-repeat;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          transform: translateX(-55px);
+        }
+      }
+    }
+    &__call {
+      margin-bottom: 55px;
+      text-align: left;
+      text-decoration: none;
+      color: #493f3f;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+
+    &__enter{
+      width: 400px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+      margin-bottom: 40px;
+      outline: none;
+
+        &::after {
+          content: '';
+          background: url('../images/geo.png') no-repeat;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+      }
+    }  
+  }
+}
+.button {
+
+  &__telega {
+    width: 34px;
+    height: 23px;
+    position: absolute;
+    top: 17px;
+    left: 40px;
+    background: url(../images/btn-icon.png) no-repeat center center;
+  }
+ &__send {
+ color: #fff;
+position: absolute;
+right: 55px;
+top: 20px;
+}   
+}
+
+@media (max-width: 1150px) {
+  .message {
+    &-wrap {
+      flex-direction: column;
+      align-items: center;
+     
+    }
+  }
+}

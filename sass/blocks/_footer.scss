@@ -1,0 +1,14 @@
+.footer {
+  background: url('../images/bg-footer.png');
+   height: 319px;
+
+  &__wrap {
+    padding-top: 190px;
+  }
+  &__link {
+    color: #fff;
+  }
+  &__phone {
+    color:#fff
+  }
+}

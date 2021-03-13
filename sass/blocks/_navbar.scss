@@ -1,0 +1,51 @@
+.header {
+  &__bg {
+    width: 100%
+  }
+}
+
+
+.navbar {
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__logo {
+    margin-top: 1.2rem;
+  }
+}
+
+.menu {
+   &__link {
+    margin-right: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #383b3c;
+    padding-bottom: 2px;
+    &:hover {
+      border-bottom: 1px solid #d828b9;
+    }
+   }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  &__phone {
+    text-decoration: none;
+    color: #383b3c;
+    // @include semibold;
+     font-family: 'Proxima Nova Semibold', sans-serif;
+  }
+
+  &-social {
+    margin-left: 2.3rem;
+
+    &__link {
+      margin-left: 1rem;
+    }
+  }
+}

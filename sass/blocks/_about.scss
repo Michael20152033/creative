@@ -1,0 +1,46 @@
+.about {
+  &__section {
+    background: url('../images/base.png') no-repeat 17% 12%;
+    padding-bottom: 200px;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__title {
+    margin-bottom: 61px;
+  }
+  &__us {
+      flex-basis: 50%;
+  }
+  &-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+      &__info {
+        padding-left: 64px;
+        text-align: end;
+        font-size: 16px;
+        line-height: 2.25;
+        margin: 0;
+        transform: translateY(-9%);
+    }
+  }
+  &__border {
+    border: 7px solid #efefef;
+    border-right: none;
+    border-top: none;
+    position: relative;
+    margin-bottom: 50px;
+    &::before {
+      content: '';
+      height: 7px;
+      width: 40px;
+      background-color: #efefef;
+      position: absolute;
+    }
+  }
+}
+
+
+

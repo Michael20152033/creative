@@ -6,14 +6,317 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="http://ma5slider.ma5.pl/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="http://ma5slider.ma5.pl/js/ma5slider.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ma5slider.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href="http://ma5slider.ma5.pl/css/ma5slider.min.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <header class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-wrap">
+            <div class="logo navbar__logo">
+              <div class="logo__image">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+            <div class="menu">
+              <nav class="menu__nav">
+                <a href="#" class="menu__link">Services</a>
+                <a href="#" class="menu__link">About us</a>
+                <a href="#" class="menu__link">Reviews</a>
+                <a href="#" class="menu__link">Portfolio</a>
+                <a href="#" class="menu__link">Contact</a>
+              </nav>
+            </div>
+            <div class="contacts">
+              <a class="contacts__phone" href="tel:+37360817818">+ ( 373 ) 60 817 818</a>
+              <div class="contacts-social">
+                <a href="#" class="contacts-social__link"><img src="images/twitter.png" alt=""></a>
+                <a href="#" class="contacts-social__link"><img src="images/facebook.png" alt=""></a>
+                <a href="#" class="contacts-social__link"><img src="images/dribbble.png" alt=""></a>
+                <a href="#" class="contacts-social__link"><img src="images/linkedIn.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
+      <div class="header-image">
+        <img class="header__bg" src="images/header-bg.png" alt="">
+      </div>
     </header>
+
+    <main>
+      <section class="about about__section">
+        <div class="container">
+
+          <div class="about-wrap">
+
+            <div class="about-us about__us">
+              <h2 class="section-title about__title">Shortly about us</h2>
+              <div class="about__border">
+                <p class="about-us__info">We are a fairly small, flexible design studio that designs for print and web.
+                  We
+                  work flexibly with
+                  clients
+                  to fulfil
+                  their design needs. Whether you need to create a brand from scratch, including marketing materials and
+                  a
+                  beautiful and
+                  functional website or whether you are looking for a design <br> refresh we are confident you will be
+                  pleased
+                  with
+                  the results</p>
+              </div>
+              <!-- <a href="#" class="button__link"> -->
+
+              <a href="#" class="button">
+                <span class="button__link">Learn More </span>
+                <span class="button__arrow"></span>
+              </a>
+              <!-- </a> -->
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="services  services__section">
+        <div class="container services__container">
+          <div class="services-wrap">
+            <h2 class="section-title services__title">Our services</h2>
+            <span class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit
+              tortor. Quisque bibendum mauris velit easely documented</span>
+            <div class="services-block">
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img" src="images/forma-1.png" alt="">
+                  <h4 class="services-block__subtitle">Branding</h4>
+                </div>
+              </div>
+
+
+
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img" src="images/forma-2.png" alt="">
+                  <h4 class="services-block__subtitle">Web applications</h4>
+                </div>
+              </div>
+
+
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img" src="images/forma-3.png" alt="">
+                  <h4 class="services-block__subtitle">Support</h4>
+                </div>
+              </div>
+
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img" src="images/forma-4.png" alt="">
+                  <h4 class="services-block__subtitle">Design</h4>
+                </div>
+              </div>
+
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img" src="images/forma-5.png" alt="">
+                  <h4 class="services-block__subtitle">SEO</h4>
+                </div>
+              </div>
+
+              <div class="services-block__box">
+                <div class="services-block__explore">
+                  <img class="services-block__img_g" src="images/forma-6.png" alt="">
+                  <h4 class="services-block__subtitle">Coding</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="#" class="button services__btn">
+            <span class="button__link">Learn More</span>
+            <span class="button__arrow"></span>
+          </a>
+
+        </div>
+
+      </section>
+
+      <section class="portfolio portfolio__section">
+        <div class="container portfolio__container">
+          <div class="portfolio-start">
+            <div class="portfolio__image">
+              <img src="images/logo-2.png" alt="">
+            </div>
+            <div class="portfolio__text">
+              <h2 class="section-title services__title">Our portfolio</h2>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. <br>
+                Quisque bibendum mauris velit easely documented</span>
+            </div>
+          </div>
+
+          <div class="portfolio-block">
+            <div class="ma5slider outside-navs outside-dots anim-horizontal loop-mode">
+              <div class="slides">
+                <a href="#slide-1"><img src="images/1.jpg" alt=""></a>
+                <a href="#slide-2"><img src="images/2.jpg" alt=""></a>
+                <a href="#slide-3"><img src="images/3.jpg" alt=""></a>
+                <a href="#slide-4"><img src="images/4.jpg" alt=""></a>
+                <a href="#slide-5"><img src="images/5.jpg" alt=""></a>
+                <a href="#slide-6"><img src="images/6.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__all">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. <br>
+              Quisque bibendum mauris velit easely documented</span>
+            <a href="#" class="button">
+              <div class="portfolio__list">
+                <span class="button__animat dot" data-target="4"></span>
+                <span class="button__animat dot" data-target="4"></span>
+                <span class="button__animat dot" data-target="4"></span>
+              </div>
+              <span class="button__work">All Works</span>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="feedback feedback__section">
+        <div class="container feedback__container">
+          <div class="feedback-top">
+            <div class="feddback__says">
+              <h2 class="section-title feedback__title">What people says</h2>
+            </div>
+            <div class="feedback-buttons">
+              <a href="#" class="feedback__btn">&#8249;</a>
+              <a href="#" class="feedback__btn">&#8250;</a>
+            </div>
+          </div>
+          <div class="feedback-wrap">
+            <div class="feedback__item">
+              <div class="feedback__ava">
+                <img src="images/ava-1.png" alt="">
+                <span class="feedback__name">Alex</span>
+              </div>
+              <p class="feedback__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis
+                aute irure dolor in</p>
+            </div>
+            <div class="feedback__item">
+              <div class="feedback__ava feedback__last">
+                <img src="images/ava-2.png" alt="">
+                <span class="feedback__name">Michael</span>
+              </div>
+              <p class="feedback__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+            </div>
+            <div class="feedback__item feedback__item_active">
+              <div class="feedback__ava feedback__last">
+                <img src="images/ava-2.png" alt="">
+                <span class="feedback__name">Michael</span>
+              </div>
+              <p class="feedback__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+            </div>
+            <div class="feedback__item feedback__item_active">
+              <div class="feedback__ava feedback__last">
+                <img src="images/ava-2.png" alt="">
+                <span class="feedback__name">Michael</span>
+              </div>
+              <p class="feedback__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="message message__section">
+        <div class="container message__container">
+          <div class="message-wrap">
+            <div class="message-block">
+              <h2 class="section-title about__title">Say hello!</h2>
+              <form class="message-form" action="">
+                <input class="message-form__enter " placeholder="Name" type="text"></input>
+                <input class="message-form__enter " placeholder="Email" type="text"></input>
+                <input class="message-form__enter " placeholder="Message" type="text"></input>
+              </form>
+              <a href="#" class="button">
+                <span class="button__telega"></span>
+                <span class="button__send">Send Message</span>
+              </a>
+            </div>
+            <div class="message-calllink">
+              <img class="message-calllink__icon" src="images/behance-icon.png" alt="">
+              <img class="message-calllink__icon" src="images/twitter-icon.png" alt="">
+              <img class="message-calllink__icon" src="images/dribbble-icon.png" alt="">
+              <img class="message-calllink__icon" src="images/google-plus-icon.png" alt="">
+            </div>
+            <div class="message-block message-block__cont">
+              <a class="message__call message-block__tel" href="tel:+37360817818">+ ( 373 ) 60 817 818</a>
+              <a class="message__call message-block__email" href="">belicov.dmitrii@gmail.com</a>
+              <span class="message__call message-block__geo">Transnistria , Bendery <br>
+                Indusrial 59 / 3</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+
+      <div class="container">
+        <div class="navbar-wrap footer__wrap">
+          <div class=" logo navbar__logo">
+            <div class="logo__image">
+              <img src="images/logo-3.png" alt="">
+            </div>
+          </div>
+          <div class="menu">
+            <nav class="menu__nav">
+              <a href="#" class="menu__link footer__link">Services</a>
+              <a href="#" class="menu__link footer__link">About us</a>
+              <a href="#" class="menu__link footer__link">Reviews</a>
+              <a href="#" class="menu__link footer__link">Portfolio</a>
+              <a href="#" class="menu__link footer__link">Contact</a>
+            </nav>
+          </div>
+          <div class="contacts">
+            <a class="contacts__phone footer__phone" href="tel:+37360817818">+ ( 373 ) 60 817 818</a>
+            <div class="contacts-social">
+              <a href="#" class="contacts-social__link"><img src="images/logo-Twitter.png" alt=""></a>
+              <a href="#" class="contacts-social__link"><img src="images/logo-Facebook.png" alt=""></a>
+              <a href="#" class="contacts-social__link"><img src="images/logo-Dribbble.png" alt=""></a>
+              <a href="#" class="contacts-social__link"><img src="images/logo-LinkedIn.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
+
 
   </body>
 
